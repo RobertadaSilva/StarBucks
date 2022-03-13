@@ -13,7 +13,7 @@
       
     <header>
         <div class="center">
-            <div class="logo"> <img src="image/logo.png" alt="Logo Starbucks"></div><!--logo-->
+            <div class="logo"><a href="#"><img src="image/logo.png" alt="Logo Starbucks"></a></div><!--logo-->
                 <div class="menu">
                     <a href="https://starbucks.com.br/home" target="_blank" rel="noopener noreferrer">Home</a>
                     <a href="https://starbucks.com.br/sobre" target="_blank" rel="noopener noreferrer">About</a>
@@ -27,8 +27,9 @@
         <section class="sobre">
                 
             <div class="extras">
-                <img src="image/img1.png" alt="copo de café do Starbucks">
-
+                <img src="image/img1.png" class="img1" alt="copo de café do Starbucks">
+               
+        
                     <div class="redes_sociais">
                         <a href="https://www.facebook.com/StarbucksBrasil/" target="_blank" rel="noopener noreferrer">
                             <img src="image/facebook.png" alt="png do facebook">
@@ -43,6 +44,17 @@
 
                     </div><!--extras-->
 
+                    <div>
+                        <ul class="thumb">
+                            <li><img src="image/thumb1.png" onclick="trocaimagem('image/img1.png');mudarcorfundo('#017143')"></li>
+                            <li><img src="image/thumb2.png" onclick="trocaimagem('image/img2.png');mudarcorfundo('#eb7495')"></li>
+                            <li><img src="image/thumb3.png" onclick="trocaimagem('image/img3.png');mudarcorfundo('#d752b1')"></li>
+                           
+    
+                        </ul>
+    
+                    </div>
+
                     <div class="texto_center">
                     <div class="texto">
                         <h1>It´s not just  Coffee <br>It´s <span style="color: #017143;">StarBucks</span> </h1>
@@ -52,6 +64,22 @@
                 </div>
             </section>
 
+            <script type="text/javascript">
+
+                function trocaimagem(anything){
+                    document.querySelector('.img1').src =anything
+                }
+
+                function mudarcorfundo(color) {
+                    var extras= document.querySelector('.extras').style.background=color;
+                    
+
+                }
+               
+
+            </script>
+
+        
     
 </body>
 </html>

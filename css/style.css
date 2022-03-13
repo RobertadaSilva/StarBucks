@@ -51,6 +51,12 @@ section.sobre{
                     border-radius: 50%;
                     background-color:#017143;}
 
+.img1{
+                    margin-top: -90px;
+                    width: 400px;
+                    height: 57%;
+}
+
 .redes_sociais{
                     position: absolute;
                     right: 480px;
@@ -83,3 +89,50 @@ section.sobre{
                     width: 100px;
                     height: 27px;
                     cursor: pointer;}
+
+.thumb{
+    position: absolute;
+    list-style: none;
+    left: 50%;
+    bottom: 20px;
+    transform: translatex(-50%);
+    display: flex;}
+
+.tumb li{
+           
+            display: inline-block;
+            margin: 0 20px;
+            cursor: pointer;
+            transition: 2s ;}
+
+.thumb li:hover{
+                transform: translateY(-15px);
+}
+
+.thumb li img{
+                max-width: 60px;
+                margin-bottom: 30px; 
+                margin-left: 30px;}
+
+
+
+
+                    @media only screen and (min-width: 481px){ /* posso utilizar qualquer valor de acordo com o tamanho que eu quero que o meu site abra*/
+                        @media only screen and (max-width:720px)
+                        {
+                        
+                    
+                            #menu_lateral, aside{
+                                display: none;} /*ele faz o componente sumir.(Retira físicamente o componente) */
+                    
+                             section{
+                                 width: 100%;
+                             }   
+                    
+                             #menu_superior a{
+                                    width: 33.3333334%;
+                             }
+                               
+                           
+                    }
+                    }
